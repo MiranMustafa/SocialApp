@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/create_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="Create your account!"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:layout_marginBottom="40dp"/>
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Full name"
+            android:background="@drawable/rounded_corners_background_edittext"
+            />
+        <EditText
+            android:id="@+id/username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Username"
+            android:background="@drawable/rounded_corners_background_edittext"
+            />
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Password"
+            android:background="@drawable/rounded_corners_background_edittext"
+            />
+    </LinearLayout>
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Sign up"
+            android:textColor="#fff"
+            android:layout_below="@+id/linear_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/rounded_corners_background_button"/>
+    <Button
+        android:id="@+id/switch_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Switch to sign in"
+        android:textColor="#fff"
+        android:layout_below="@id/signup_button"
+        android:background="@drawable/rounded_corners_background_button"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+
+
+</RelativeLayout>
